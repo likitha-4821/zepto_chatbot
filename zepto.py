@@ -50,7 +50,7 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 
 # Load dataset
-csv_url = "zepto.csv"
+csv_url = "zepto1.csv"
 try:
     df = pd.read_csv(csv_url)
 except Exception as e:
