@@ -42,7 +42,7 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 
 # Load dataset
-csv_url = "svcew_details.csv"
+csv_url = "zepto.csv"
 try:
     df = pd.read_csv(csv_url)
 except Exception as e:
@@ -73,8 +73,8 @@ def find_closest_question(user_query, vectorizer, question_vectors, df):
         return None
 
 # Chatbot title with color
-st.markdown("""<h1 style='text-align: center; color: #0078D7;'>Svecw College Chatbot</h1>""", unsafe_allow_html=True)
-st.write("Welcome to the College Chatbot! Ask me anything about the college.")
+st.markdown("""<h1 style='text-align: center; color: #0078D7;'>Zepto Chatbot</h1>""", unsafe_allow_html=True)
+st.write("Welcome to the Zepto Chatbot! Ask me anything about zepto.")
 
 # Display previous chat messages
 for message in st.session_state.messages:
