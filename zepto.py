@@ -12,7 +12,7 @@ st.markdown(
     """
     <style>
         .main {
-            background: url('https://source.unsplash.com/1600x900/?technology,chat') no-repeat center center fixed;
+            background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Ffree-colorful-background&psig=AOvVaw1s4gFlyU3bJ_9VgYX7ncyI&ust=1740817278363000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCOjiovX35YsDFQAAAAAdAAAAABAE') no-repeat center center fixed;
             background-size: cover;
         }
         .stChatMessage.user {
