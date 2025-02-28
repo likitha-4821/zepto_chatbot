@@ -7,12 +7,13 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 # Page configuration
 st.set_page_config(page_title="Zepto Chatbot", layout="centered")
 
-# Custom CSS for styling
+# Custom CSS for styling with background image and colors
 st.markdown(
     """
     <style>
         .main {
-            background-color: #f5f5f5;
+            background: url('https://source.unsplash.com/1600x900/?technology,chat') no-repeat center center fixed;
+            background-size: cover;
         }
         .stChatMessage.user {
             background-color: #0078D7;
@@ -20,17 +21,24 @@ st.markdown(
             padding: 10px;
             border-radius: 10px;
             margin: 5px;
+            font-weight: bold;
         }
         .stChatMessage.assistant {
-            background-color: #34A853;
+            background-color: #FF5722;
             color: white;
             padding: 10px;
             border-radius: 10px;
             margin: 5px;
+            font-weight: bold;
         }
         .stChatInput {
-            border: 2px solid #0078D7;
+            border: 2px solid #4CAF50;
             border-radius: 5px;
+            background-color: #E3F2FD;
+        }
+        h1 {
+            color: #FFC107;
+            text-shadow: 2px 2px 5px #000000;
         }
     </style>
     """,
@@ -72,9 +80,9 @@ def find_closest_question(user_query, vectorizer, question_vectors, df):
     else:
         return None
 
-# Chatbot title with color
-st.markdown("""<h1 style='text-align: center; color: #0078D7;'>Zepto Chatbot</h1>""", unsafe_allow_html=True)
-st.write("Welcome to the Zepto Chatbot! Ask me anything about zepto.")
+# Chatbot title with color and shadow
+st.markdown("""<h1 style='text-align: center; color: #FFC107;'>Zepto Chatbot</h1>""", unsafe_allow_html=True)
+st.write("Welcome to the Zepto Chatbot! Ask me anything about Zepto.")
 
 # Display previous chat messages
 for message in st.session_state.messages:
